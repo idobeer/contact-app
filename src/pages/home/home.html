@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+
+
+<ion-input type="text" [(ngModel)]="contactnamefname" placeholder="First Name"></ion-input>
+<ion-input type="text" [(ngModel)]="contactnamelname" placeholder="Last Name"></ion-input>
+<ion-input type="number" [(ngModel)]="contactnumber" placeholder="Contact Number"></ion-input>
+<button ion-button color="primary" (click)='openFilters();'>ADD</button>
+
+</ion-content>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "415860793255",
+    "firebase_url": "https://beerapp-46b6c.firebaseio.com",
+    "project_id": "beerapp-46b6c",
+    "storage_bucket": "beerapp-46b6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415860793255:android:4dbc6ac8e242462b",
+        "android_client_info": {
+          "package_name": "com.gps.beerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415860793255-i1qmfmibttjg4ojn5elml8t7konpssda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgtj7OQd-qIfEaM6KjlIl4ImMlAKCGn5M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
