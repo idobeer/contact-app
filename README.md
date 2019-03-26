@@ -1,4 +1,4 @@
-# beerapp
+# contact-manage-app
 
 
 1: npm install<br>
