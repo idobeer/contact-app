@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeX86_64ReleaseResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.6.aar\\f1f36cb271f36d662d50ec1a47f76ea0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "276,439",
+                        "endColumns": "63,166",
+                        "endOffsets": "339,605"
+                    },
+                    "to": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "105,282",
+                        "endColumns": "67,166",
+                        "endOffsets": "168,444"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-10.2.6.aar\\e2a2ea7d147f3ade6b08448d6d7d2379\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "176",
+                        "endColumns": "77",
+                        "endOffsets": "253"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "593",
+                        "endColumns": "81",
+                        "endOffsets": "670"
+                    }
+                },
+                {
+                    "source": "F:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\generated\\res\\google-services\\x86_64\\release\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,307,389,493,596,716,813",
+                        "endColumns": "143,107,81,103,102,119,96,73",
+                        "endOffsets": "194,302,384,488,591,711,808,882"
+                    },
+                    "to": {
+                        "startLines": "6,8,9,10,11,12,13,15",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "449,675,783,865,969,1072,1192,1348",
+                        "endColumns": "143,107,81,103,102,119,96,73",
+                        "endOffsets": "588,778,860,964,1067,1187,1284,1417"
+                    }
+                },
+                {
+                    "source": "F:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "159,55,100",
+                        "endColumns": "63,44,58",
+                        "endOffsets": "218,95,154"
+                    },
+                    "to": {
+                        "startLines": "3,4,14",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "173,237,1289",
+                        "endColumns": "63,44,58",
+                        "endOffsets": "232,277,1343"
+                    }
+                }
+            ]
+        }
+    ]
+}

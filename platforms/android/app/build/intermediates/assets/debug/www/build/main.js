@@ -153,7 +153,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"F:\santu\beerapp\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Ionic Blank\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  The world is your oyster.\n\n\n\n\n\n<ion-input type="text" [(ngModel)]="contactnamefname" placeholder="First Name"></ion-input>\n\n<ion-input type="text" [(ngModel)]="contactnamelname" placeholder="Last Name"></ion-input>\n\n<ion-input type="number" [(ngModel)]="contactnumber" placeholder="Contact Number"></ion-input>\n\n<button ion-button color="primary" (click)=\'openFilters();\'>ADD</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"F:\santu\beerapp\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"F:\santu\apps\contact-manage-app\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Ionic Blank\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  The world is your oyster.\n\n\n\n\n\n<ion-input type="text" [(ngModel)]="contactnamefname" placeholder="First Name"></ion-input>\n\n<ion-input type="text" [(ngModel)]="contactnamelname" placeholder="Last Name"></ion-input>\n\n<ion-input type="number" [(ngModel)]="contactnumber" placeholder="Contact Number"></ion-input>\n\n<button ion-button color="primary" (click)=\'openFilters();\'>ADD</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"F:\santu\apps\contact-manage-app\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_contacts__["c" /* Contacts */]])
     ], HomePage);
@@ -278,7 +278,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"F:\santu\beerapp\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"F:\santu\beerapp\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"F:\santu\apps\contact-manage-app\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"F:\santu\apps\contact-manage-app\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);

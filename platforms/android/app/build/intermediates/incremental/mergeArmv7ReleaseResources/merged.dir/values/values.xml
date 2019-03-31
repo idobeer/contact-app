@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <integer name="google_play_services_version">10260000</integer>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="app_name">beerapp</string>
+    <string name="common_google_play_services_unknown_issue"><ns1:g id="app_name">%1$s</ns1:g> is having trouble with Google Play services. Please try again.</string>
+    <string name="default_web_client_id" translatable="false">415860793255-i1qmfmibttjg4ojn5elml8t7konpssda.apps.googleusercontent.com</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="firebase_database_url" translatable="false">https://beerapp-46b6c.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">415860793255</string>
+    <string name="google_api_key" translatable="false">AIzaSyDgtj7OQd-qIfEaM6KjlIl4ImMlAKCGn5M</string>
+    <string name="google_app_id" translatable="false">1:415860793255:android:4dbc6ac8e242462b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDgtj7OQd-qIfEaM6KjlIl4ImMlAKCGn5M</string>
+    <string name="google_storage_bucket" translatable="false">beerapp-46b6c.appspot.com</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="project_id" translatable="false">beerapp-46b6c</string>
+</resources>
