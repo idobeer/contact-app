@@ -1,51 +1,74 @@
 import { Component } from '@angular/core';
 import { NavController, Platform } from 'ionic-angular';
-import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts';
-declare var FCMPlugin: any; 
+import { Contacts, ContactField, ContactName } from '@ionic-native/contacts';
+
+import { AddContactPage } from '../add-contact/add-contact' 
+import { AuthService } from '../../services/auth.service';
+import { ContactService } from '../../services/contact.service';
+import { Contact } from '../../models/contact.interface';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
+
+declare var FCMPlugin: any;
 
 @Component({
 	selector: 'page-home',
 	templateUrl: 'home.html'
 })
+
 export class HomePage {
+	usersCollection: AngularFirestoreCollection<any>;
+	userDoc: AngularFirestoreDocument<any>;
+
 	public allContacts: any
-	contactnamefname; contactnamelname; contactnumber;
-	constructor(public platform: Platform, public navCtrl: NavController, public contacts: Contacts) {
+	addContactPage = AddContactPage
+	private user;
+
+	contact: Contact = {
+    name: '',
+    number:'',
+    custEmail: '',
+    custUid: '',
+  }
+
+	constructor(public afs: AngularFirestore, public platform: Platform, public navCtrl: NavController, private auth: AuthService, public contacts: Contacts, private contactService: ContactService) {	
+		this.user = this.auth.afAuth.auth.currentUser
 		this.onNotification()
-	}
-	
-	 async onNotification(){	
+		this.userDoc = this.afs.doc(`Users/${this.user.email}`);
+	}	
+
+  async onNotification(){	
 	 	var self = this
 		try {
 			await this.platform.ready();
 
 			if (typeof FCMPlugin != 'undefined') {
+				//FCMPlugin.subscribeToTopic('all');
 
-				FCMPlugin.subscribeToTopic('contact');
-
-				FCMPlugin.getToken(function(token){
-			    alert(token);
+				FCMPlugin.getToken(function(token){			    
+    			self.userDoc.update({
+    				deviceToken: token,
+    				uid: self.user.uid
+    			});	    
 				});
 
 		  	FCMPlugin.onNotification(function(data){
-			    if(data.wasTapped){			    		    	
+			    if(data.wasTapped){	    		    	
 						var contact = self.contacts.create();
-						contact.name = new ContactName(null, data.fname, data.lname);
+						contact.name = new ContactName(null, data.name);
 						contact.phoneNumbers = [new ContactField('mobile', data.number)];
 						contact.save().then(
 							() => alert('Contact saved!'),
 							(error: any) => console.error('Error saving contact.', error)
 						);
 			      //alert( JSON.stringify(data) );
-			    }else{			      
+			    }else{     
 						var contact = self.contacts.create();
-						contact.name = new ContactName(null, data.fname, data.lname);
+						contact.name = new ContactName(null, data.name);
 						contact.phoneNumbers = [new ContactField('mobile', data.number)];
 						contact.save().then(
 							() => alert('Contact saved!'),
 							(error: any) => console.error('Error saving contact.', error)
 						);
-			      //alert( JSON.stringify(data) );
 			    }
 				},(error) => console.error(error));
 
@@ -62,25 +85,24 @@ export class HomePage {
 		}
 	}
 
-
-	
-
-openFilters() {
-		var xyz = this.contacts.create();
-		xyz.name = new ContactName(null, this.contactnamefname, this.contactnamelname);
-		xyz.phoneNumbers = [new ContactField('mobile', this.contactnumber)];
-		xyz.save().then(
-			() => alert('Contact saved!'),
-			(error: any) => console.error('Error saving contact.', error)
-		);
-
+  syncContacts() {
+		this.contacts.find(['displayName', 'name', 'phoneNumbers'], {filter: "", multiple: true, hasPhoneNumber: true})
+    .then((contacts) => {
+    	var contactsLength = 5
+      for (var i=0 ; i < contactsLength; i++) {
+        if(contacts[i].displayName !== null && contacts[i].phoneNumbers) {
+	        //var contact = {}
+	        this.contact.name   = contacts[i].displayName;
+	        this.contact.number = contacts[i].phoneNumbers[0] && contacts[i].phoneNumbers[0].value;
+	        this.contact.custEmail = this.user.email;
+	        this.contact.custUid = this.user.uid;	        
+      		this.contactService.addContact(this.contact);    				  
+        }
+      }
+		})
 	}
 
-		/*getContacts() {
-		this.contacts.find(['displayName', 'name', 'phoneNumbers'], { filter: "", multiple: true })
-			.then(data => {
-				this.allContacts = data
-
-			});
-	}*/
+	logout() {
+    this.auth.signOut();
+  }
 }

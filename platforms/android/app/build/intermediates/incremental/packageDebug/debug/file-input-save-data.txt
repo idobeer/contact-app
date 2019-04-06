@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Apr 01 01:21:01 IST 2019
+#Sun Apr 07 01:23:50 IST 2019
 76.base=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 5.base=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 86.base=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
@@ -44,7 +44,7 @@
 8.set=ASSET
 45.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\assets\\fonts\\roboto-bold.woff2
 46.set=ASSET
-55.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\build\\main.css
+55.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\build\\polyfills.js
 35.set=ASSET
 21.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-xhdpi-v4\\screen.png
 16.base=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
@@ -109,10 +109,10 @@ count=87
 13.base=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 46.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\plugins\\cordova-plugin-splashscreen\\www\\splashscreen.js
 56.set=ASSET
-56.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\build\\polyfills.js
+56.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\plugins\\cordova-plugin-contacts\\www\\contacts.js
 7.set=ASSET
 45.set=ASSET
-22.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\build\\main.js
+22.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\plugins\\cordova-plugin-contacts\\www\\ContactError.js
 32.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\cordova-js-src\\plugin\\android\\app.js
 70.base=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 34.set=ASSET
@@ -173,9 +173,9 @@ count=87
 14.base=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 47.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\0.jar\\jsr305_annotations\\Jsr305_annotations.gwt.xml
 66.set=JAVA_RESOURCE
-57.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\plugins\\cordova-plugin-contacts\\www\\contacts.js
+57.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\build\\main.css
 55.set=ASSET
-23.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\plugins\\cordova-plugin-contacts\\www\\ContactError.js
+23.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\build\\main.js
 33.file=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\manifest.json
 71.base=F\:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 6.set=ASSET

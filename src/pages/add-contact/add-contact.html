@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Add Contact</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="createContact()" [formGroup]="contactform">
+    <ion-list inset>
+
+      <ion-item [ngClass]="{ invalid: firstNameErrors.hasError('*', ['touched']) }">
+        <ion-input type="text" [(ngModel)]="contactnamefname" placeholder="FirstName" formControlName="firstName"></ion-input>
+      </ion-item>
+
+      <div ngxErrors="firstName" #firstNameErrors="ngxErrors">
+        <div [ngxError]="['minlength', 'required']" [when]="['touched']">It should be at least 3 characters</div>
+      </div>
+
+      <ion-item [ngClass]="{ invalid: lastNameErrors.hasError('*', ['touched']) }">
+        <ion-input type="text" [(ngModel)]="contactnamelname" placeholder="lastName" formControlName="lastName"></ion-input>
+      </ion-item>
+
+      <div ngxErrors="lastName" #lastNameErrors="ngxErrors">
+        <div [ngxError]="['minlength']" [when]="['touched']">It should be at least 3 characters</div>
+      </div>
+
+      <ion-item [ngClass]="{ invalid: contactNumberErrors.hasError('*', ['touched']) }">
+        <ion-input type="text" [(ngModel)]="contactnumber" placeholder="contactNumber" formControlName="contactNumber"></ion-input>
+      </ion-item>
+
+      <div ngxErrors="contactNumber" #contactNumberErrors="ngxErrors">
+        <div [ngxError]="['minlength', 'maxlenth', 'required']" [when]="['touched']">It should be 10 digits</div>
+      </div>
+    </ion-list>
+
+    <div padding-horizontal>
+      <div class="form-error">{{contactError}}</div>
+
+      <button ion-button full type="submit" [disabled]="!contactform.valid">Add Contact</button>
+    </div>
+
+  </form>
+  
+</ion-content>
+

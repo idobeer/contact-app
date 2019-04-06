@@ -28,12 +28,12 @@
         "source": "F:\\santu\\beerapp\\platforms\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon.png"
     },
     {
-        "merged": "F:\\Work Station\\Projects\\beer\\beerapp\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xhdpi_screen.png.flat",
-        "source": "F:\\Work Station\\Projects\\beer\\beerapp\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
-    },
-    {
         "merged": "F:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-mdpi_screen.png.flat",
         "source": "F:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
+    },
+    {
+        "merged": "F:\\Work Station\\Projects\\beer\\beerapp\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xhdpi_screen.png.flat",
+        "source": "F:\\Work Station\\Projects\\beer\\beerapp\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
     },
     {
         "merged": "F:\\Work Station\\Projects\\beer\\beerapp\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_icon.png.flat",

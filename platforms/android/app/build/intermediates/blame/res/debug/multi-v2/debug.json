@@ -199,28 +199,6 @@
             ]
         },
         {
-            "outputFile": "F:\\santu\\beerapp\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\values-lv_values-lv.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.6.aar\\f1f36cb271f36d662d50ec1a47f76ea0\\res\\values-lv\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "224",
-                        "endOffsets": "509"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "105",
-                        "endColumns": "224",
-                        "endOffsets": "325"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "F:\\santu\\beerapp\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\values-hu_values-hu.arsc.flat",
             "map": [
                 {
@@ -238,6 +216,28 @@
                         "startOffsets": "105",
                         "endColumns": "235",
                         "endOffsets": "336"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "F:\\santu\\beerapp\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\values-lv_values-lv.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.6.aar\\f1f36cb271f36d662d50ec1a47f76ea0\\res\\values-lv\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "224",
+                        "endOffsets": "509"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "224",
+                        "endOffsets": "325"
                     }
                 }
             ]
@@ -3269,69 +3269,63 @@
                 {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-10.2.6.aar\\f1f36cb271f36d662d50ec1a47f76ea0\\res\\values\\values.xml",
                     "from": {
-                        "startLines": "4,7",
-                        "startColumns": "0,0",
-                        "startOffsets": "276,439",
-                        "endColumns": "63,166",
-                        "endOffsets": "339,605"
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
                     },
                     "to": {
                         "startLines": "2,5",
                         "startColumns": "4,4",
-                        "startOffsets": "105,282",
+                        "startOffsets": "105,284",
                         "endColumns": "67,166",
-                        "endOffsets": "168,444"
+                        "endOffsets": "168,446"
                     }
                 },
                 {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-10.2.6.aar\\e2a2ea7d147f3ade6b08448d6d7d2379\\res\\values\\values.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "176",
-                        "endColumns": "77",
-                        "endOffsets": "253"
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
                     },
                     "to": {
                         "startLines": "7",
                         "startColumns": "4",
-                        "startOffsets": "593",
+                        "startOffsets": "595",
                         "endColumns": "81",
-                        "endOffsets": "670"
+                        "endOffsets": "672"
                     }
                 },
                 {
                     "source": "F:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "159,55,100",
-                        "endColumns": "63,44,58",
-                        "endOffsets": "218,95,154"
+                        "startLines": "-1,2,-1",
+                        "startColumns": "-1,4,-1",
+                        "startOffsets": "-1,55,-1",
+                        "endColumns": "-1,46,-1",
+                        "endOffsets": "-1,97,-1"
                     },
                     "to": {
                         "startLines": "3,4,14",
                         "startColumns": "4,4,4",
-                        "startOffsets": "173,237,1289",
-                        "endColumns": "63,44,58",
-                        "endOffsets": "232,277,1343"
+                        "startOffsets": "173,237,1291",
+                        "endColumns": "63,46,58",
+                        "endOffsets": "232,279,1345"
                     }
                 },
                 {
                     "source": "F:\\santu\\apps\\contact-manage-app\\platforms\\android\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,307,389,493,596,716,813",
-                        "endColumns": "143,107,81,103,102,119,96,73",
-                        "endOffsets": "194,302,384,488,591,711,808,882"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "6,8,9,10,11,12,13,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "449,675,783,865,969,1072,1192,1348",
+                        "startOffsets": "451,677,785,867,971,1074,1194,1350",
                         "endColumns": "143,107,81,103,102,119,96,73",
-                        "endOffsets": "588,778,860,964,1067,1187,1284,1417"
+                        "endOffsets": "590,780,862,966,1069,1189,1286,1419"
                     }
                 }
             ]

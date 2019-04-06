@@ -1,18 +1,45 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">    
+
     <ion-title>
-      Ionic Blank
+      WhatsPush
     </ion-title>
+
+    <ion-buttons end>
+      <button [navPush]="addContactPage" ion-button>
+        <ion-icon name="add"></ion-icon>
+      </button>      
+    </ion-buttons>
   </ion-navbar>
+
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+  <div class="home-hello">
+		<img src="https://1.cms.s81c.com/sites/default/files/2017-10/mobile-app-builder-card_0.png" />
 
+		<div class="hello-title" text-wrap padding>
+			<h1>Idobeer.io</h1>
+			Bengaluru, India
+		</div>
+	</div>
 
-<ion-input type="text" [(ngModel)]="contactnamefname" placeholder="First Name"></ion-input>
-<ion-input type="text" [(ngModel)]="contactnamelname" placeholder="Last Name"></ion-input>
-<ion-input type="number" [(ngModel)]="contactnumber" placeholder="Contact Number"></ion-input>
-<button ion-button color="primary" (click)='openFilters();'>ADD</button>
+	<ion-row>
+		<ion-card class="quick-action" (click)="syncContacts()">
+			<ion-card-content>
+				<ion-icon name="sync"></ion-icon>
+				<span margin>Sync Contacts</span>
+			</ion-card-content>
+		</ion-card>
+	</ion-row>
+
+	<ion-row>
+		<ion-card class="quick-action" (click)="logout()">
+			<ion-card-content>
+				<ion-icon name="log-out"></ion-icon>
+				<span margin>Logout</span>
+			</ion-card-content>
+		</ion-card>
+	</ion-row>
 
 </ion-content>
